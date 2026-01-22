@@ -7,6 +7,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
 import { useToast } from "@/hooks/use-toast";
+import testimonialsCustomersImg from "@/assets/testimonials-customers.jpg";
 
 const Testimonials = () => {
   const { toast } = useToast();
@@ -67,12 +68,24 @@ const Testimonials = () => {
 
   return (
     <section id="avaliacoes" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
-        {/* Depoimentos */}
-        <div className="text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary mb-4">
+      {/* Header Image Banner */}
+      <div className="w-full h-[200px] md:h-[250px] overflow-hidden mb-16 relative">
+        <img 
+          src={testimonialsCustomersImg} 
+          alt="Clientes sendo atendidos na Papelart" 
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-primary/60" />
+        <div className="absolute inset-0 flex items-center justify-center">
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-primary-foreground text-center">
             O Que Nossos Clientes Dizem
           </h2>
+        </div>
+      </div>
+      
+      <div className="container mx-auto px-4">
+        {/* Subtitle */}
+        <div className="text-center mb-12">
           <p className="font-body text-foreground/70 max-w-2xl mx-auto">
             A satisfação dos nossos clientes é nossa maior recompensa
           </p>

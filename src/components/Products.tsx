@@ -1,4 +1,5 @@
 import { BookOpen, Palette, Briefcase, PenTool, Ruler, Package } from "lucide-react";
+import productsSuppliesImg from "@/assets/products-supplies.jpg";
 
 const Products = () => {
   const categories = [
@@ -36,6 +37,15 @@ const Products = () => {
 
   return (
     <section id="produtos" className="py-24 bg-background relative">
+      {/* Banner Image */}
+      <div className="w-full h-[200px] md:h-[300px] overflow-hidden mb-16">
+        <img 
+          src={productsSuppliesImg} 
+          alt="Materiais escolares e de escritório coloridos" 
+          className="w-full h-full object-cover"
+        />
+      </div>
+
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">

@@ -1,4 +1,5 @@
 import { Heart, Target, Eye, Award, Users, Sparkles, Lightbulb, Smile, TrendingUp } from "lucide-react";
+import aboutStoreImg from "@/assets/about-store.jpg";
 
 const About = () => {
   const values = [
@@ -51,23 +52,35 @@ const About = () => {
           <div className="w-20 h-1 bg-gradient-gold mx-auto rounded-full" />
         </div>
 
-        {/* History */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <div className="bg-secondary/50 rounded-3xl p-8 md:p-12 shadow-soft">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
-                <Sparkles className="w-6 h-6 text-accent" />
-              </div>
-              <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
-                Nossa história
-              </h3>
+        {/* History with Image */}
+        <div className="max-w-6xl mx-auto mb-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
+            {/* Image */}
+            <div className="rounded-3xl overflow-hidden shadow-card">
+              <img 
+                src={aboutStoreImg} 
+                alt="Interior da loja Papelart com prateleiras de materiais escolares e escritório" 
+                className="w-full h-[400px] object-cover"
+              />
             </div>
-            <p className="font-body text-muted-foreground leading-relaxed text-lg">
-              A Papelart nasceu de um sonho simples, construído em família, com carinho, dedicação e muito amor pelo que fazemos. Desde o começo, nosso desejo sempre foi criar um lugar acolhedor, onde cada cliente se sentisse em casa e encontrasse tudo o que precisa para estudar, trabalhar, ensinar e criar.
-            </p>
-            <p className="font-body text-muted-foreground leading-relaxed text-lg mt-4">
-              Hoje, a Papelart é mais do que uma papelaria: é um espaço feito para acolher famílias, incentivar sonhos e escrever histórias todos os dias, com a mesma dedicação de quando tudo começou.
-            </p>
+            
+            {/* Text Content */}
+            <div className="bg-secondary/50 rounded-3xl p-8 md:p-10 shadow-soft">
+              <div className="flex items-start gap-4 mb-6">
+                <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center flex-shrink-0">
+                  <Sparkles className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground">
+                  Nossa história
+                </h3>
+              </div>
+              <p className="font-body text-muted-foreground leading-relaxed text-lg">
+                A Papelart nasceu de um sonho simples, construído em família, com carinho, dedicação e muito amor pelo que fazemos. Desde o começo, nosso desejo sempre foi criar um lugar acolhedor, onde cada cliente se sentisse em casa e encontrasse tudo o que precisa para estudar, trabalhar, ensinar e criar.
+              </p>
+              <p className="font-body text-muted-foreground leading-relaxed text-lg mt-4">
+                Hoje, a Papelart é mais do que uma papelaria: é um espaço feito para acolher famílias, incentivar sonhos e escrever histórias todos os dias, com a mesma dedicação de quando tudo começou.
+              </p>
+            </div>
           </div>
         </div>
 

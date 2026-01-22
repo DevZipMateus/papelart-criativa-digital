@@ -1,4 +1,5 @@
 import { Printer, FileImage, Layers, Camera, ScanLine, Copy } from "lucide-react";
+import servicesPrintingImg from "@/assets/services-printing.jpg";
 
 const Services = () => {
   const services = [
@@ -43,18 +44,27 @@ const Services = () => {
   return (
     <section id="servicos" className="py-24 bg-secondary/30 relative">
       <div className="container mx-auto px-4">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <span className="inline-block font-body text-sm font-semibold text-accent uppercase tracking-wider mb-4">
-            O que fazemos
-          </span>
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Nossos serviços
-          </h2>
-          <p className="font-body text-muted-foreground max-w-2xl mx-auto text-lg">
-            Oferecemos uma variedade de serviços para atender suas necessidades de impressão, cópia e acabamento.
-          </p>
-          <div className="w-20 h-1 bg-gradient-gold mx-auto rounded-full mt-6" />
+        {/* Section Header with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16 max-w-6xl mx-auto">
+          <div>
+            <span className="inline-block font-body text-sm font-semibold text-accent uppercase tracking-wider mb-4">
+              O que fazemos
+            </span>
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Nossos serviços
+            </h2>
+            <p className="font-body text-muted-foreground text-lg">
+              Oferecemos uma variedade de serviços para atender suas necessidades de impressão, cópia e acabamento.
+            </p>
+            <div className="w-20 h-1 bg-gradient-gold rounded-full mt-6" />
+          </div>
+          <div className="rounded-3xl overflow-hidden shadow-card">
+            <img 
+              src={servicesPrintingImg} 
+              alt="Equipamentos de impressão e copiadora profissional" 
+              className="w-full h-[300px] object-cover"
+            />
+          </div>
         </div>
 
         {/* Services Grid */}
