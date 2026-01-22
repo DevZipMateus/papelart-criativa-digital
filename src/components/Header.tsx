@@ -45,11 +45,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3">
-            <img
-              src="/Captura_de_tela_de_2026-01-22_09-38-07-removebg-preview.png"
-              alt="Papelart Copiadora e Papelaria"
-              className="h-10 sm:h-12 w-auto"
-            />
+            <img src="/logo.png" alt="Papelart Copiadora e Papelaria" className="h-24 sm:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}
