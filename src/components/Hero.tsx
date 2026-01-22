@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Logo Animation */}
           <div className="mb-8 animate-fade-in">
             <img
-              src="/logo.png"
+              src="/Captura_de_tela_de_2026-01-22_09-38-07-removebg-preview.png"
               alt="Papelart Copiadora e Papelaria"
               className="h-32 md:h-40 w-auto mx-auto"
             />
