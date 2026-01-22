@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div>
             <img
-              src="/logo.png"
+              src="/Captura_de_tela_de_2026-01-22_09-38-07-removebg-preview.png"
               alt="Papelart Copiadora e Papelaria"
               className="h-16 w-auto mb-4"
             />

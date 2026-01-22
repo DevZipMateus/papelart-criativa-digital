@@ -46,7 +46,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-3">
             <img
-              src="/logo.png"
+              src="/Captura_de_tela_de_2026-01-22_09-38-07-removebg-preview.png"
               alt="Papelart Copiadora e Papelaria"
               className="h-10 sm:h-12 w-auto"
             />
