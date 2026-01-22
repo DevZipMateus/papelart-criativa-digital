@@ -12,7 +12,7 @@ const Footer = () => {
             <img
               src="/logo.png"
               alt="Papelart Copiadora e Papelaria"
-              className="h-16 w-auto mb-4 brightness-0 invert"
+              className="h-16 w-auto mb-4"
             />
             <p className="font-body text-background/70 leading-relaxed">
               Encantando pessoas através da papelaria, com produtos que despertam criatividade, organização e alegria.
