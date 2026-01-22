@@ -1,16 +1,25 @@
 import { Feather, Sparkles } from "lucide-react";
+import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center pt-20 bg-gradient-hero overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBg})` }}
+      />
+      {/* Overlay for readability */}
+      <div className="absolute inset-0 bg-primary/85" />
+      
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-light/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-gold-light/10 rounded-full blur-3xl" />
-        <Feather className="absolute top-40 right-20 text-primary/10 w-24 h-24 animate-float" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-background/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+        <Feather className="absolute top-40 right-20 text-background/10 w-24 h-24 animate-float" />
         <Sparkles className="absolute bottom-40 left-20 text-accent/20 w-16 h-16" />
       </div>
 
@@ -26,12 +35,12 @@ const Hero = () => {
           </div>
 
           {/* H1 - Company Name */}
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             Papelart Copiadora e Papelaria
           </h1>
 
           {/* H2 - Description */}
-          <h2 className="font-body text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          <h2 className="font-body text-xl md:text-2xl text-primary-foreground/80 max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in" style={{ animationDelay: "0.4s" }}>
             Encantando pessoas através da papelaria, com produtos que despertam criatividade, organização e alegria em cada detalhe
           </h2>
 
@@ -50,7 +59,7 @@ const Hero = () => {
             </a>
             <a
               href="#servicos"
-              className="border-2 border-primary/30 hover:border-primary text-foreground hover:bg-primary hover:text-primary-foreground px-8 py-4 rounded-full font-body text-lg font-medium transition-all duration-300"
+              className="border-2 border-primary-foreground/30 hover:border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary px-8 py-4 rounded-full font-body text-lg font-medium transition-all duration-300"
             >
               Nossos serviços
             </a>
@@ -58,8 +67,8 @@ const Hero = () => {
 
           {/* Schedule Info */}
           <div className="mt-16 animate-fade-in" style={{ animationDelay: "0.8s" }}>
-            <p className="font-body text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">Horário de funcionamento:</span>
+            <p className="font-body text-sm text-primary-foreground/70">
+              <span className="font-semibold text-primary-foreground">Horário de funcionamento:</span>
               <br className="sm:hidden" />
               <span className="sm:ml-2">Segunda a sexta 08:00 às 18:00 | Sábado 08:00 às 14:00</span>
             </p>
